@@ -16,7 +16,7 @@
             this.firstName = System.Console.ReadLine();
             System.Console.Write("What is your last name? ");
             this.lastName = System.Console.ReadLine();
-            System.Console.Write("What is your age? ");
+            System.Console.Write("How old are you? ");
             this.Age = int.Parse(System.Console.ReadLine());
             this.Spouse = null;
             SumOfAllAges += this.Age;
@@ -28,7 +28,7 @@
             this.Spouse = new Person();
             System.Console.Write("What is your spouse's first name? ");
             this.Spouse.firstName = System.Console.ReadLine();
-            System.Console.Write("What is your spouse's age? ");
+            System.Console.Write("How old is your spouse?");
             this.Spouse.Age = int.Parse(System.Console.ReadLine());
             this.Spouse.lastName = this.lastName;
             this.Spouse.Spouse = this;
