@@ -15,11 +15,11 @@ namespace ConsoleApplication3
 
 
                 Person p1 = new Person();
-                System.Console.WriteLine("Person 1: ");
+                System.Console.WriteLine("[Enter Information for Person 1]: ");
 
                 p1.InputPersonData();
 
-                System.Console.Write(" Are you married? True or False");
+                System.Console.Write("Are you married? True or False");
                 maritalStatus = bool.Parse(System.Console.ReadLine());
                 if (maritalStatus)
                 {
@@ -29,7 +29,7 @@ namespace ConsoleApplication3
 
 
                 Person p2 = new Person();
-                System.Console.WriteLine("Person 2: ");
+                System.Console.WriteLine("[Enter Information for Person 2]: ");
 
                 p2.InputPersonData();
 
@@ -43,12 +43,12 @@ namespace ConsoleApplication3
 
                 p1.PrintNameandAge();
                 p2.PrintNameandAge();
-                System.Console.WriteLine("Average Age: " + Person.SumOfAllAges / Person.count + " years old.");
+                System.Console.WriteLine("Average Age: " + Person.SumOfAllAges / Person.count);
                 System.Console.WriteLine();
 
 
                 System.Console.WriteLine();
-                System.Console.WriteLine("Press Any Key");
+                System.Console.WriteLine("Fin - press any key");
                 System.Console.ReadKey();
 
             }
